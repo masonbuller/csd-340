@@ -1,0 +1,46 @@
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1 {
+    background-color: #756689;
+    color: white;
+    border: 1px solid #d6a800;
+    padding: 10px;
+}
+
+h2 {
+    background-color: #756689;
+    color: white;
+    border: 1px solid #d6a800;
+    padding: 10px;
+}
+
+h3 {
+    background-color: #756689;
+    color: white;
+    border: 1px solid #d6a800;
+    padding: 10px;
+}
+
+h4 {
+    background-color: #756689;
+    color: white;
+    border: 1px solid #d6a800;
+    padding: 10px;
+}
+
+a {
+    color: #50465C;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2C2633;
+}
+
+a:hover {
+    color: #978BA5;
+}
