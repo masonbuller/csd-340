@@ -1,0 +1,53 @@
+#container {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+#left {
+    width: 45%;
+    float: left;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+ol {
+    font-weight: 300;
+    list-style-position: inside;
+}
+
+#right {
+    width: 45%;
+    float: right;
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+ul {
+    font-weight: 300;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+a {
+    float: right;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#solo {
+    width: 100%;
+    margin-top: 60%;
+    margin-bottom: 20px;
+}
