@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    color: #614051;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-areas: 'div div div';
+    margin-top: 10%;
+}
+
+h3 {
+    text-align: center;
+    color: #432C38;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+    color: #705362;
+}
+
+#solo {
+    text-align: right;
+    padding-top:10%;
+    padding-right: 5%;
+}
+
