@@ -13,6 +13,11 @@ body {
     font-family: sans-serif;
 }
 
+#container {
+    margin: 2% 5% 5% 100px;
+    padding: 10px;
+}
+
 #navbar {
     overflow: hidden;
     background-color: #E5805B;
@@ -31,13 +36,6 @@ body {
 #navbar a:hover {
     background-color: rgb(140, 170, 205);
     color: white;
-}
-
-#container {
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 10px;
 }
 
 .card {
@@ -61,9 +59,28 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #E5805B;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
 footer {
     background-color: #E5805B;
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%
 }
@@ -71,9 +88,9 @@ footer {
 footer p {
     color: white;
     font-weight: 400;
-    float: right;
     padding-right: 20px;
     font-style: italic;
+    float: right;
 }
 
 /**Changed padding-right for footer because the text was basically to the edge**/
@@ -85,4 +102,8 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+footer #name {
+    text-align: left;
 }
