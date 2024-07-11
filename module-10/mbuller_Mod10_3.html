@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--Mason Buller
+Module 10.3 Assignment
+https://github.com/masonbuller/csd-340
+-->
+<html lang="en">
+    <head>
+        <title>CSD 340 Development with HTML and CSS</title>
+        <script>
+            function onClick1() {
+                document.getElementById("click1").innerHTML = "Image Clicked";
+            }
+
+            function onClick2() {
+                document.getElementById("click2").innerHTML = "Image Clicked";
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Assignment 10.3: JavaScript - Part 2</h1>
+            <img id="img1" src="dots1.png" alt="dots" onclick="onClick1()" onmouseenter="document.getElementById('img1').src = 'dots2.png'" onmouseleave="document.getElementById('img1').src = 'dots1.png'">
+            <p id="click1">Run your mouse over the image to change.</p>
+            <img id="img2" src="skittles1.jpg" alt="skittles" onclick="onClick2()" onmouseenter="document.getElementById('img2').src = 'skittles2.jpg'" onmouseleave="document.getElementById('img2').src = 'skittles1.jpg'">
+            <p id="click2">Run your mouse over the image to change.</p>
+        </div>
+    </body>
+
+</html>
