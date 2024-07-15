@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--Mason Buller
+Module 11.2 Assignment
+https://github.com/masonbuller/csd-340
+-->
+<html lang="en">
+    <head>
+        <title>CSD 340 Development with HTML and CSS</title>
+        <script>
+            const itemsArray = [];
+            function addItem() {
+                var itemVal = document.getElementById("textbox").value;
+                itemsArray.push(itemVal);
+                alert("Item: " + itemVal + " was added at index " + (itemsArray.length - 1))
+                document.getElementById("textbox").value = "";
+            }
+
+            function deleteLastItem() {
+                let length = itemsArray.length - 1;
+                let value = itemsArray[length];
+                if (itemsArray.length > -1) {
+                    itemsArray.pop();
+                    alert("Item: " + value + " was deleted at index " + (length))
+                }
+            }
+
+            function displayItem() {
+                var itemNum = 1;
+                let stringVal = "";
+                let list = document.getElementById("list");
+                for (let i = 0; i < itemsArray.length; i++) {
+                    stringVal += "Item " + itemNum + " = " + itemsArray[i] + "<br>";
+                    itemNum += 1;
+                }
+                list.innerHTML = stringVal;
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Assignment 11.2: JavaScript - Part 3</h1>
+            <p>This is an interactive To Do List. Type in your first item in the text book, then click Add. Click the Display button to see current items in the list. Click on Delete Last Entry if you&#39;d like to remove the last entry.</p>
+            <input type="text" id="textbox">
+            <button id="add" onclick="addItem()">Add</button>
+            <button id="delete" onclick="deleteLastItem()">Delete Last Entry</button>
+            <button id="display" onclick="displayItem()">Display</button>
+            <hr>
+            <p id="list"></p>
+        </div>
+    </body>
+
+</html>
