@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--Mason Buller
+Module 12.2 Assignment
+https://github.com/masonbuller/csd-340
+-->
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="mbuller_Mod12_2.css">
+        <title>CSD 340 Development with HTML and CSS</title>
+        <script>
+            const books = ["Little House on the Prarie", "The Babysitters Club", "Love, Aubrey", "Out of My Mind", "Deep, Dark, and Dangerous", "To All the Boys I've Loved Before", 'Red Queen', "Girl in Pieces", "The Pokey Little Puppy", "Wonder"];
+            function topToBottom() {
+                let text = "";
+                for (let i = 0; i < books.length; i++) {
+                    text +="<li>" + books[i] + "</li>";
+                }
+                document.getElementById("list").innerHTML = text;
+            }
+            function bottomToTop() {
+                let text = "";
+                for (let i = books.length - 1; i > -1; i--) {
+                    text +="<li>" + books[i] + "</li>";
+                }
+                document.getElementById("list").innerHTML = text;
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Assignment 12.2: JavaScript - Part 4</h1>
+            <div id="left">
+                <h3>Top 10 Favorite Books</h3>
+                <button id="ttb" onclick="topToBottom()">Top to Bottom</button>
+                <button id="btt" onClick="bottomToTop()">Bottom to Top</button>
+                <ol id="list">
+                    <li>Little House on the Prarie</li>
+                    <li>The Babysitters Club</li>
+                    <li>Love, Aubrey</li>
+                    <li>Out of My Mind</li>
+                    <li>Deep, Dark, and Dangerous</li>
+                    <li>To All the Boys I've Loved Before</li>
+                    <li>Red Queen</li>
+                    <li>Girl in Pieces</li>
+                    <li>The Pokey Little Puppy</li>
+                    <li>Wonder</li>
+                </ol>
+            </div>
+            <div id="right">
+                <h3>5 Things I've Learned Since the Course Started</h3>
+                <ul>
+                    <li>Google Font Kits</li>
+                    <li>GitHub Live Pages</li>
+                    <li>You can use images for bullet points</li>
+                    <li>A page is like a big grid that you can't see</li>
+                    <li>Meta Tags</li>
+                </ul>
+            </div>
+            <div id="solo">
+                <a href="../index.html">back to Landing Page</a>
+            </div>
+        </div>
+    </body>
+
+</html>
